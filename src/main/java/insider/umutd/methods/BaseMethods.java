@@ -58,7 +58,6 @@ public class BaseMethods {
     }
 
     protected WebElement waitForElementToBeVisible(String locatorKey) {
-        WebElement element = findElement(locatorKey);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(findElementInfoBy(locatorKey)));
     }
     protected List<WebElement> findsElements(String locatorKey){
@@ -72,7 +71,6 @@ public class BaseMethods {
     }
 
     protected void sendKeys(String locatorKey,String text){
-
         findElement(locatorKey).sendKeys(text);
         logger.info(text+ " written to " +locatorKey+ " element");
     }
@@ -86,17 +84,6 @@ public class BaseMethods {
         JavascriptExecutor executor = (JavascriptExecutor) jsdriver;
         executor.executeScript("arguments[0].click();", element);
         logger.info(locatorKey + " element clicked with javascript");
-    }
-
-    protected void sendKeysWithCsv(String locatorKey){
-        try (BufferedReader br = new BufferedReader(new FileReader("src/test/resources/csvFile.csv"))) {
-            String product = br.readLine();
-            findElement(locatorKey).sendKeys(product);
-            logger.info("csv dosyasından çekilen "+product + " yazıldı");
-        }catch (IOException e) {
-            logger.info("Bir Hata oldu");
-
-        }
     }
     protected WebElement scrollToElementToBeVisible(String key) {
         WebElement webElement = findElement(key);
