@@ -1,0 +1,29 @@
+[{
+  "key": "key",
+  "value": "value",
+  "type": "css,id,xpath,class"
+},{
+  "key": "insiderLogo",
+  "value": "//img[@alt='insider_logo']",
+  "type": "xpath"
+},{
+  "key": "exploreInsiderTitle",
+  "value": "highlight-en",
+  "type": "id"
+},
+  {
+  "key": "AcceptCookies",
+  "value": "wt-cli-accept-all-btn",
+  "type": "id"
+},
+  {
+  "key": "companyDropdownBtn",
+  "value": "//a[(@id='navbarDropdownMenuLink') and (contains(text(),'Company'))]",
+  "type": "xpath"
+},
+  {
+  "key": "careerDropdownBtn",
+  "value": "//a[(@class='dropdown-sub') and (contains(text(),'Careers'))]",
+  "type": "xpath"
+}
+]

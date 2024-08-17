@@ -1,0 +1,35 @@
+[{
+  "key": "loadMoreBtn",
+  "value": "a.loadmore",
+  "type": "css"
+},
+{
+"key": "teamsSection",
+"value": "career-find-our-calling",
+"type": "id"
+},
+{
+"key": "locationsTitle",
+"value": "//div/h3[contains(text(),'Our Locations')]",
+"type": "xpath"
+},
+{
+"key": "locationsSection",
+"value": "career-our-location",
+"type": "id"
+},
+{
+"key": "lifeatInsiderTitle",
+"value": "//h2[(contains(@class,'elementor-heading-title')) and (contains(text(),'Life at Insider'))]",
+"type": "xpath"
+},
+{
+"key": "lifeatInsiderSection",
+"value": "section.elementor-element-a8e7b90",
+"type": "css"
+},
+{
+"key": "seeAllJobsBtn",
+"value": "div.button-group a.btn-outline-secondary",
+"type": "css"
+}]

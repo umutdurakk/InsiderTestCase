@@ -1,0 +1,14 @@
+[{
+  "key": "jobTitleInJobPage",
+  "value": "div.posting-headline h2",
+  "type": "css"
+},{
+  "key": "jobLocationInJobPage",
+  "value": "div.posting-headline div.posting-categories div.location",
+  "type": "css"
+},{
+  "key": "jobDepartmentInJobPage",
+  "value": "div.posting-headline div.posting-categories div.department",
+  "type": "css"
+}
+]
