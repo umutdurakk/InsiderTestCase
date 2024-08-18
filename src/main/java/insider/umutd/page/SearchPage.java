@@ -20,7 +20,7 @@ public class SearchPage extends BaseMethods {
 
     public void checkJobsPanels(){
         scrollToElementToBeVisible("sectionOfThePositionAreaTitle");
-        checkForElement("sectionOfThePositionArea","Browse Open Positions  section not visible");
+        checkForElement("sectionOfThePositionArea","Browse Open Positions section not visible");
         checkIsTextContainsList("jobsPositionTitles","Quality Assurance");
         saveValue("selectedJobsPositionTitle");
         checkIsTextContainsList("jobsPositionDepartment","Quality Assurance");

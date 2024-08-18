@@ -5,12 +5,14 @@ import org.junit.Assert;
 
 public class HomePage extends BaseMethods {
 
-    public void selectCareerDropDownButton(){
+    public void checkHomePage(){
         waitForElementToBeVisible("insiderLogo");
         clickElement("AcceptCookies");
         checkForElement("insiderLogo","insider logo not visible, Homepage not open");
         checkForElement("exploreInsiderTitle","explore Insider Title not visible, Homepage not open");
         checkForElement("companyDropdownBtn","company menu button not visible.");
+    }
+    public void selectCareerDropDownButton(){
         clickElement("companyDropdownBtn");
         checkForElement("careerDropdownBtn","Carrer dropdown button not visible.");
         clickElement("careerDropdownBtn");

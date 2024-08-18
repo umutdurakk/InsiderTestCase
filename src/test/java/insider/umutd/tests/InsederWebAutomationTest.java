@@ -16,6 +16,7 @@ public class InsederWebAutomationTest extends BaseTest {
         SearchPage searchPage = new SearchPage();
         JobPage jobPage = new JobPage();
 
+        homePage.checkHomePage();
         homePage.selectCareerDropDownButton();
         careerPage.checkCareerPage();
         careerPage.gotoSearchJobPage();
