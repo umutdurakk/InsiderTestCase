@@ -1,58 +1,57 @@
-[{
-  "key": "locationFilterBox",
-  "value": "#filter-by-location + span",
-  "type": "css"
-},{
-  "key": "departmentFilterBox",
-  "value": "select2-filter-by-department-container",
-  "type": "id"
-},{
-  "key": "selectIstanbulLocation",
-  "value": "//li[contains(@id,'Istanbul')]",
-  "type": "xpath"
-},{
-  "key": "selectQualityAssuranceDepartment",
-  "value": "//li[contains(@id,'Quality Assurance')]",
-  "type": "xpath"
-},{
-  "key": "sectionOfThePositionAreaTitle",
-  "value": "#career-position-list div div:nth-child(1)",
-  "type": "css"
-},{
-  "key": "sectionOfThePositionArea",
-  "value": "#career-position-list div div:nth-child(2)",
-  "type": "css"
-},{
-  "key": "jobsPositionTitles",
-  "value": "p.position-title",
-  "type": "css"
-},{
-  "key": "jobsPositionDepartment",
-  "value": "span.position-department",
-  "type": "css"
-},{
-  "key": "jobsPositionLocation",
-  "value": "div.position-location",
-  "type": "css"
-},{
-  "key": "selectedJobsPositionTitle",
-  "value": "div.position-list div:nth-child(2) p",
-  "type": "css"
-},{
-  "key": "selectedJobsPositionLocation",
-  "value": "div.position-list div:nth-child(2) div.position-location",
-  "type": "css"
-},{
-  "key": "selectedJobsPositionDepartment",
-  "value": "div.position-list div:nth-child(2) span",
-  "type": "css"
-},{
-  "key": "viewRoleButton",
-  "value": "div.position-list div:nth-child(2) a",
-  "type": "css"
-},{
-  "key": "checkSearchPageisOpen",
-  "value": "//span[@title=\"Quality Assurance\"]",
-  "type": "xpath"
-}
+[
+  {
+    "key": "locationFilterBox",
+    "value": "#filter-by-location + span",
+    "type": "css"
+  },
+  {
+    "key": "departmentFilterBox",
+    "value": "select2-filter-by-department-container",
+    "type": "id"
+  },
+  {
+    "key": "selectIstanbulLocation",
+    "value": "//li[contains(@id,'Istanbul')]",
+    "type": "xpath"
+  },
+  {
+    "key": "selectQualityAssuranceDepartment",
+    "value": "//li[contains(@id,'Quality Assurance')]",
+    "type": "xpath"
+  },
+  {
+    "key": "sectionOfThePositionArea",
+    "value": "jobs-list",
+    "type": "id"
+  },
+  {
+    "key": "jobsPositionTitles",
+    "value": "p.position-title",
+    "type": "css"
+  },
+  {
+    "key": "sectionCarrerListTitle",
+    "value": "section#career-position-list h3",
+    "type": "css"
+  },
+  {
+    "key": "jobsPositionDepartment",
+    "value": "span.position-department",
+    "type": "css"
+  },
+  {
+    "key": "jobsPositionLocation",
+    "value": "div.position-location",
+    "type": "css"
+  },
+  {
+    "key": "viewRoleButton",
+    "value": "div.position-list div a",
+    "type": "css"
+  },
+  {
+    "key": "checkSearchPageisOpen",
+    "value": "//span[@title=\"Quality Assurance\"]",
+    "type": "xpath"
+  }
 ]

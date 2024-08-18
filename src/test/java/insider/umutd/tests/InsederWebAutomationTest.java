@@ -10,7 +10,7 @@ import org.junit.Test;
 public class InsederWebAutomationTest extends BaseTest {
 
     @Test
-    public void webAutomationTest(){
+    public void webAutomationTest() {
         HomePage homePage = new HomePage();
         CareerPage careerPage = new CareerPage();
         SearchPage searchPage = new SearchPage();
@@ -21,7 +21,8 @@ public class InsederWebAutomationTest extends BaseTest {
         careerPage.checkCareerPage();
         careerPage.gotoSearchJobPage();
         searchPage.filterJobDetails();
-        searchPage.checkJobsPanels();
+        searchPage.checkPresenceOfTheJobsList();
+        searchPage.checkAllJobsDetailContains();
         searchPage.clickViewRoleBtn();
         jobPage.checkJobPage();
 

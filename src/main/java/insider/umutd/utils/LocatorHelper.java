@@ -18,17 +18,17 @@ import java.time.Duration;
 public class LocatorHelper {
     ConfigReader configReader;
 
-    public LocatorHelper(){
-        configReader=new ConfigReader();
+    public LocatorHelper() {
+        configReader = new ConfigReader();
     }
 
-    public WebElement findElement(String locatorKey, WebDriver driver){
+    public WebElement findElement(String locatorKey, WebDriver driver) {
         WebElement element = null;
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         try {
-            File folder =new File(configReader.getFilePath("locatorPath"));
-            File[] listOfFiles= folder.listFiles();
+            File folder = new File(configReader.getFilePath("locatorPath"));
+            File[] listOfFiles = folder.listFiles();
 
             if (listOfFiles != null) {
                 for (File file : listOfFiles) {

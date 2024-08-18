@@ -12,23 +12,23 @@ public class BaseTest {
 
     ConfigReader configReader;
 
-    public BaseTest(){
+    public BaseTest() {
         configReader = new ConfigReader();
     }
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
         System.setProperty("webdriver.chrome.driver",
                 configReader.getFilePath("pathChromeDriver"));
 
-        driver=new ChromeDriver(getChromeOptions());
+        driver = new ChromeDriver(getChromeOptions());
         driver.manage().window().maximize();
 
         driver.get(configReader.getFilePath("baseUrl"));
     }
 
-    public ChromeOptions getChromeOptions(){
+    public ChromeOptions getChromeOptions() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--disable-notification");
         chromeOptions.addArguments("--disable-gpu");
@@ -40,9 +40,10 @@ public class BaseTest {
         chromeOptions.setAcceptInsecureCerts(true);
         return chromeOptions;
     }
+
     @After
-    public void tearDown(){
-        if (driver!=null){
+    public void tearDown() {
+        if (driver != null) {
             driver.quit();
         }
     }

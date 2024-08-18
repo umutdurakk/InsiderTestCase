@@ -4,12 +4,12 @@ import insider.umutd.methods.BaseMethods;
 
 public class JobPage extends BaseMethods {
 
-    public void checkJobPage(){
+    public void checkJobPage() {
         switchToSecondTab();
         waitForElementToBeVisible("jobTitleInJobPage");
-        isSavedValueEqualExpectedValue("jobTitleInJobPage","selectedJobsPositionTitle");
-        isSavedValueEqualExpectedValue("jobDepartmentInJobPage","selectedJobsPositionDepartment");
-        isSavedValueEqualExpectedValue("jobLocationInJobPage","selectedJobsPositionLocation");
+        isSavedValueEqualExpectedValue("jobTitleInJobPage", "jobsPositionTitles");
+        isSavedValueEqualExpectedValue("jobDepartmentInJobPage", "jobsPositionDepartment");
+        isSavedValueEqualExpectedValue("jobLocationInJobPage", "jobsPositionLocation");
 
     }
 }
