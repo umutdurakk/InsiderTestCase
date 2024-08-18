@@ -22,7 +22,7 @@ The following libraries are used in this project:
 * Selenium version 4.16.1
 * Log4j version 1.2.17
 * org.json version 20231013
-* ChromeDriver version 127.0.6533.120
+* ChromeDriver version 127.0.6533.120 mac-arm64
   
 ## Contact
 
