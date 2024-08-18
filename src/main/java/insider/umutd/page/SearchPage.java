@@ -16,12 +16,13 @@ public class SearchPage extends BaseMethods {
     }
 
     public void checkPresenceOfTheJobsList() {
-        scrollToElementToBeVisible("sectionCarrerListTitle");
+        scrollToElementToBeVisible("sectionOfThePositionArea");
         checkForElement("sectionOfThePositionArea", "Browse Open Positions section not visible");
         checkForElement("sectionCarrerListTitle", "Browse Open Positions section not visible");
     }
 
     public void checkAllJobsDetailContains() {
+        waitForElementToBeVisible("jobsPositionTitles");
         checkIsTextContainsList("jobsPositionTitles", "Quality Assurance");
         //Here I save the job details in a hashmap because I use it to compare on the last page,
         // and I do this for the last job in the backlog because
